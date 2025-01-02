@@ -1,0 +1,140 @@
+* {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #324263;
+    padding-block: 1.3rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+header>h1 {
+    font-size: 1.7em;
+    color: #f3f0ff;
+    font-variant: small-caps;
+}
+
+nav {
+    background-color: #324263;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 0.75rem;
+}
+
+nav ul li a {
+    background-color: #100055;
+    color: #f3f0ff;
+    text-decoration: none;
+    padding: 0.8rem;
+    border-radius: 22px;
+}
+
+nav ul li a:hover {
+    background-color: #f3f0ff;
+    color: #100055;
+    transition: all 0.3s ease-in-out;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    padding: 1.5rem 3rem;
+    flex: 1;
+    margin-inline: auto;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    flex: 2;
+    margin-right: 1rem;
+}
+
+.isi h1, h2 {
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.isi p {
+    font-size: 1.1rem;
+    font-weight: 100;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.image {
+    flex: 1;
+}
+
+.image img {
+    width: 350px;
+    border-left: 2px solid black;
+}
+
+.footer {
+    background-color: #324263;
+    color: #f3f0ff;
+    padding: 25px;
+}
+
+.footer>p {
+    font-size: 1.12rem;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 792px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin-block: 1rem;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .image img {
+        border-left: none;
+        border-top: 2px solid black;
+    }
+
+    .footer {
+        text-align: center;
+        padding: 30px;
+    }
+}
