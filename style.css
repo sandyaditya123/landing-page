@@ -77,14 +77,14 @@ main {
     margin-right: 1rem;
 }
 
-.isi h1, h2 {
+.content h1, h2 {
     font-size: 2.5rem;
     font-style: italic;
     font-weight: 700;
     margin-bottom: 0.5rem;
 }
 
-.isi p {
+.content p {
     font-size: 1.1rem;
     font-weight: 100;
     text-align: justify;
